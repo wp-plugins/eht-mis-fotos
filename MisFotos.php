@@ -148,7 +148,10 @@ function FiltroMisFotos ($contenido)
 										$miniaturas, 
 										LeerConfiguracion (CONFIGURACION_TAMANO_MINIATURA), 
 										LeerConfiguracion (CONFIGURACION_TAMANO_NORMAL));
-				$contenido = str_replace ($aciertos[0][$m], $galeria->Pintar ($mostrarRuta, LeerConfiguracion (CONFIGURACION_ANCHO)), $contenido);
+				$textoGaleria = $galeria->Pintar ($mostrarRuta, LeerConfiguracion (CONFIGURACION_ANCHO));
+                		$textoGaleria .= "<p align=\"center\">Plugin <a href=\"http://emiliogonzalez.sytes.net/index.php/2007/07/06/misfotos-plugin-para-wordpress/\ target=\"_blank\">EHT Mis Fotos</a> - Creado por <a href=\"http://emiliogonzalez.sytes.net\" target=\"_blank\">Emilio Gonz&aacute;lez Monta&ntilde;a</a></p>";
+
+				$contenido = str_replace ($aciertos[0][$m], $textoGaleria, $contenido);
 			}
 			else
 			{
