@@ -3,8 +3,8 @@
 Plugin Name: EHT Mis Fotos
 Plugin URI: http://emiliogonzalez.sytes.net/index.php/2007/07/06/misfotos-plugin-para-wordpress/
 Description: Plugin para incrustar galerias de imagenes en Wordpress de manera autom&aacute;tica.
-Author: <a href="mailto:egoeht69@hotmail.com">Emilio Gonz&aacute;lez Monta&ntilde;a</a>
-Version: 0.2
+Author: Emilio Gonz&aacute;lez Monta&ntilde;a
+Version: 0.3
 Author URI: http://emiliogonzalez.sytes.net/
 */
 
