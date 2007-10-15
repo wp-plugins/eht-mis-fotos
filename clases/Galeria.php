@@ -52,7 +52,7 @@ class Galeria
 		$trozos = explode (DIRECTORY_SEPARATOR, $this->ruta->GetRuta ());
 		$ruta = "";
 		$texto .= "<p>";
-		$texto .= "<a href=\"$PHP_SELF?ruta=/\">RAÍZ</a>";
+		$texto .= "<a href=\"$PHP_SELF?ruta=/\">RA&Iacute;Z</a>";
 		foreach ($trozos as $trozo)
 		{
 			if (strlen ($trozo) > 0)
@@ -218,7 +218,7 @@ class Galeria
 			}
 		}
 
-		$base = "wp-content/plugins/ehtMisFotos/imagenes/";
+		$base = "wp-content/plugins/eht-mis-fotos/imagenes/";
 		if ($tipoImagen == MINIATURA_FICHERO)
 		{
 			$miniatura = "/" . $this->GetReducida ($this->imagenes->GetRuta (),
